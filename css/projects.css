@@ -17,7 +17,7 @@
 .showcase-card {
     border-radius: var(--border-radius-large);
     /* had to eye-ball the width. 100% on small devices overflows */
-    min-height: 80dvh;
+    min-height: 80lvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,10 +172,17 @@
     text-align: center;
 }
 
+@media only screen and (max-height: 640px) {
+    .showcase-card {
+        position: relative;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .showcase-card {
         padding: var(--padding-medium) var(--padding-small);
         width: 95%;
+        position: relative;
     }
 
     .showcase-card::before {

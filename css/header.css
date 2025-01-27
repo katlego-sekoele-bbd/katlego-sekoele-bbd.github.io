@@ -17,27 +17,27 @@
     gap: 0 var(--padding-large);
 }
 
-#hero-section::before {
+/* #hero-section::before {
     content: "";
     box-shadow: 0 0 var(--padding-medium) var(--padding-medium) var(--background) inset;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 95dvh;
+    min-height: 95lvh;
     background-image: var(--background-image);
     filter: opacity(0.6);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-}
+} */
 
 #hero-image {
     width: auto;
     height: auto;
     flex-basis: 40%;
-    max-height: 100dvh;
+    max-height: 100lvh;
 }
 
 #hero-heading {
