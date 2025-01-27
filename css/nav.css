@@ -1,0 +1,17 @@
+#nav {
+    display: flex;
+    justify-content: center;
+    padding: var(--padding-small) 0;
+    width: 100%;
+}
+
+.logo-text {
+    font-size: var(--font-size-large);
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+#logo-image {
+    width: var(--icon-size-xlarge);
+    vertical-align: middle;
+}

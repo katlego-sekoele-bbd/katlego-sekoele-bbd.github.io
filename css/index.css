@@ -1,0 +1,53 @@
+body {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+p {
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    box-shadow: 0 4px 6px var(--shadow);
+    padding: var(--padding-large) var(--padding-section);
+    border-radius: 8px;
+}
+
+hr {
+    color: var(--border);
+}
+
+.pill {
+    padding: var(--padding-tiny) var(--padding-small);
+    border-radius: calc(1px/0);
+    font-size: small;
+}
+
+.ghost {
+    border: 0.15rem solid var(--border);
+}
+
+.green-muted {
+    color: var(--pill-text);
+    background-color: var(--muted-green);
+}
+
+.red-muted {
+    color: var(--pill-text);
+    background-color: var(--muted-red);
+}
+
+.purple-muted {
+    color: var(--pill-text);
+    background-color: var(--muted-purple);
+}

@@ -1,0 +1,66 @@
+:root {
+    --background-image: url("/assets/backgrounds/hero-light-mode.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-image: url("/assets/backgrounds/hero-dark-mode.svg");
+    }
+}
+
+#hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0 var(--padding-large);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 var(--padding-medium) var(--padding-medium) var(--background) inset;
+}
+
+#hero-image {
+    width: auto;
+    height: auto;
+    flex-basis: 40%;
+    max-height: 100dvh;
+}
+
+#hero-heading {
+    font-size: var(--font-size-xxxlarge);
+}
+
+#hero-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+#hero-summary {
+    font-size: var(--font-size-large);
+}
+
+#skills-container {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin-small);
+    padding-bottom: var(--padding-large);
+}
+
+@media only screen and (max-width: 800px) {
+    #hero-section {
+        display: block;
+        padding: var(--padding-large);
+    }
+
+    #hero-image {
+        max-width: 100%;
+    }
+}
