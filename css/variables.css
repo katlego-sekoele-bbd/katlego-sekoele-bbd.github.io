@@ -1,0 +1,156 @@
+/* Light Mode */
+:root {
+    /* COLORS (for light mode) */
+    --background: #FFFFFF;
+    --text: #333333;
+    --muted-text: #666666;
+    --accent-blue: #0055FF;
+    --border: #DDDDDD;
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    --vibrant-red: #FF4C4C;
+    --muted-red: #FFB3B3;
+    --bright-green: #34D399;
+    --muted-green: #A7E6D1;
+    --bold-purple: #9B4DFF;
+    --muted-purple: #D6A8FF;
+
+    /* SPACING (for smallest devices) */
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 24px;
+
+    --margin-small: 8px;
+    --margin-medium: 16px;
+    --margin-large: 24px;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+
+    /* FONT SIZING (for smallest devices) */
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-xlarge: 1.5rem;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* COLORS */
+        --background: #121212;
+        --text: #E0E0E0;
+        --muted-text: #B0B0B0;
+        --accent-blue: #0055FF;
+        --border: #333333;
+        --shadow: rgba(0, 0, 0, 0.8);
+
+        --vibrant-red: #FF4C4C;
+        --muted-red: #FFB3B3;
+        --bright-green: #34D399;
+        --muted-green: #A7E6D1;
+        --bold-purple: #9B4DFF;
+        --muted-purple: #D6A8FF;
+    }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    :root {
+        /* SPACING */
+        --padding-small: 8px;
+        --padding-medium: 16px;
+        --padding-large: 24px;
+
+        --margin-small: 8px;
+        --margin-medium: 16px;
+        --margin-large: 24px;
+
+        --border-radius-small: 4px;
+        --border-radius-medium: 8px;
+        --border-radius-large: 12px;
+
+        /* FONT SIZING */
+        --font-size-small: 0.8125rem;
+        --font-size-base: 0.9375rem;
+        --font-size-large: 1.125rem;
+        --font-size-xlarge: 1.375rem;
+    }
+}
+
+
+/* small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+    :root {
+        /* SPACING */
+        --font-size-base: 14px;
+        --padding-small: 8px;
+        --padding-medium: 16px;
+        --padding-large: 20px;
+
+        --margin-small: 8px;
+        --margin-medium: 16px;
+        --margin-large: 24px;
+
+        --border-radius-small: 4px;
+        --border-radius-medium: 8px;
+        --border-radius-large: 12px;
+
+        /* FONT SIZING */
+        --font-size-small: 0.875rem;
+        --font-size-base: 1rem;
+        --font-size-large: 1.25rem;
+        --font-size-xlarge: 1.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    :root {
+        /* SPACING */
+        --font-size-base: 16px;
+        --padding-small: 12px;
+        --padding-medium: 18px;
+        --padding-large: 24px;
+
+        --margin-small: 12px;
+        --margin-medium: 18px;
+        --margin-large: 28px;
+
+        --border-radius-small: 6px;
+        --border-radius-medium: 10px;
+        --border-radius-large: 14px;
+
+        /* FONT SIZING */
+        --font-size-small: 1rem;
+        --font-size-base: 1.125rem;
+        --font-size-large: 1.5rem;
+        --font-size-xlarge: 1.875rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    :root {
+        /* SPACING */
+        --font-size-base: 18px;
+        --padding-small: 16px;
+        --padding-medium: 24px;
+        --padding-large: 32px;
+
+        --margin-small: 16px;
+        --margin-medium: 24px;
+        --margin-large: 36px;
+
+        --border-radius-small: 8px;
+        --border-radius-medium: 12px;
+        --border-radius-large: 16px;
+
+        /* FONT SIZING */
+        --font-size-small: 1.125rem;
+        --font-size-base: 1.25rem;
+        --font-size-large: 1.75rem;
+        --font-size-xlarge: 2.125rem;
+    }
+}
