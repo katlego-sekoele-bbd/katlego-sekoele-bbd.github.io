@@ -1,0 +1,9 @@
+.app-icon {
+    width: var(--icon-size-large);
+}
+
+@media (prefers-color-scheme: dark) {
+    .app-icon {
+        filter: invert(100%);
+    }
+}
