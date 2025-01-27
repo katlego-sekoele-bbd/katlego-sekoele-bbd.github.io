@@ -182,7 +182,6 @@
     .showcase-card {
         padding: var(--padding-medium) var(--padding-small);
         width: 95%;
-        position: relative;
     }
 
     .showcase-card::before {
