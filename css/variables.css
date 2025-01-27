@@ -46,6 +46,9 @@
     --icon-size-xlarge: 40px;
 
     --pill-text: #1f1f1f;
+
+    --box-shadow-tiny: 0.125rem 0.125rem 0.5rem 0.0625rem var(--shadow);
+    --box-shadow-small: 0.125rem 0.125rem 0.5rem 0.125rem var(--shadow);
 }
 
 /* Dark Mode */
@@ -184,7 +187,7 @@
         --padding-small: 12px;
         --padding-medium: 18px;
         --padding-large: 24px;
-        --padding-section: 128px;
+        --padding-section: 64px;
 
         --margin-small: 12px;
         --margin-medium: 18px;
@@ -219,7 +222,7 @@
         --padding-small: 16px;
         --padding-medium: 24px;
         --padding-large: 32px;
-        --padding-section: 256px;
+        --padding-section: 192px;
 
         --margin-small: 16px;
         --margin-medium: 24px;

@@ -10,17 +10,20 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--accent-blue);
-}
-
-a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--accent-blue);
+}
+
 section {
-    box-shadow: 0 4px 6px var(--shadow);
     padding: var(--padding-large) var(--padding-section);
-    border-radius: 8px;
 }
 
 hr {
@@ -50,4 +53,15 @@ hr {
 .purple-muted {
     color: var(--pill-text);
     background-color: var(--muted-purple);
+}
+
+#skills-container {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin-small);
+    padding-bottom: var(--padding-large);
 }
