@@ -2,10 +2,12 @@ body {
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text);
     background-color: var(--background);
+    word-wrap: break-word;
 }
 
 p {
     color: var(--text);
+    font-size: var(--font-size-base);
 }
 
 a {
@@ -23,7 +25,13 @@ a:hover {
 }
 
 section {
-    padding: var(--padding-large) var(--padding-section);
+    padding: var(--padding-large) var(--padding-xlarge);
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: var(--padding-large) var(--padding-small);
+    }
 }
 
 hr {

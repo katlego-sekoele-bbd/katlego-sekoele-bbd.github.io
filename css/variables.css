@@ -17,38 +17,56 @@
     --muted-purple: #D6A8FF;
 
     /* SPACING (for smallest devices) */
-    --padding-tiny: 4px;
-    --padding-small: 8px;
-    --padding-medium: 16px;
-    --padding-large: 24px;
-    --padding-section: 4px;
+    --padding-tiny: 0.25rem;
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 2rem;
+    --padding-xlarge: 4rem;
+    --padding-xxlarge: 8rem;
+    --padding-xxxlarge: 16rem;
 
-    --margin-small: 8px;
-    --margin-medium: 16px;
-    --margin-large: 24px;
+    --margin-tiny: 0.25rem;
+    --margin-small: 0.5rem;
+    --margin-medium: 1rem;
+    --margin-large: 2rem;
+    --margin-section: 4rem;
 
-    --border-radius-small: 4px;
-    --border-radius-medium: 8px;
-    --border-radius-large: 12px;
+    --border-radius-tiny: 0.25rem;
+    --border-radius-small: 0.5rem;
+    --border-radius-medium: 1rem;
+    --border-radius-large: 2rem;
+    --border-radius-section: 4rem;
 
-    /* FONT SIZING (for smallest devices) */
-    --font-size-small: 0.875rem;
+    /* FONT SIZING */
+    --font-size-tiny: 0.25rem;
+    --font-size-small: 0.5rem;
     --font-size-base: 1rem;
-    --font-size-large: 1.25rem;
-    --font-size-xlarge: 1.5rem;
-    --font-size-xxlarge: 3rem;
-    --font-size-xxxlarge: 4rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+    --font-size-xlarge: 3rem;
+    --font-size-xxlarge: 4rem;
+    --font-size-xxxlarge: 5rem;
 
-    /* ICON SIZING (for smallest devices) */
-    --icon-size-small: 16px;
-    --icon-size-medium: 24px;
-    --icon-size-large: 32px;
-    --icon-size-xlarge: 40px;
+    /* ICON SIZING */
+    --icon-size-tiny: 0.25rem;
+    --icon-size-small: 0.5rem;
+    --icon-size-base: 1rem;
+    --icon-size-medium: 1.5rem;
+    --icon-size-large: 2rem;
+    --icon-size-xlarge: 3rem;
+    --icon-size-xxlarge: 4rem;
+    --icon-size-xxxlarge: 5rem;
 
     --pill-text: #1f1f1f;
 
     --box-shadow-tiny: 0.125rem 0.125rem 0.5rem 0.0625rem var(--shadow);
     --box-shadow-small: 0.125rem 0.125rem 0.5rem 0.125rem var(--shadow);
+
+    --image-size-large: 4rem;
+    --image-size-xlarge: 8rem;
+    --image-size-xxlarge: 22rem;
+    --image-size-xxxlarge: 32rem;
+    --image-size-xxxxlarge: 40rem;
 }
 
 /* Dark Mode */
@@ -62,188 +80,88 @@
         --accent-blue: #0055FF;
         --border: #333333;
         --shadow: rgba(0, 0, 0, 0.8);
+    }
+}
 
-        --vibrant-red: #FF4C4C;
-        --muted-red: #FFB3B3;
-        --bright-green: #34D399;
-        --muted-green: #A7E6D1;
-        --bold-purple: #9B4DFF;
-        --muted-purple: #D6A8FF;
+/* Medium devices */
+@media only screen and (max-width: 1024px) {
+    :root {
+        /* FONT SIZING */
+        --font-size-tiny: 0.25rem;
+        --font-size-small: 0.5rem;
+        --font-size-base: 1rem;
+        --font-size-medium: 1.5rem;
+        --font-size-large: 2rem;
+        --font-size-xlarge: 3rem;
+        --font-size-xxlarge: 3.5rem;
+        --font-size-xxxlarge: 4rem;
+    }
+}
 
-        --pill-text: #1f1f1f;
+/* small devices */
+@media only screen and (max-width: 768px) {
+    :root {
+        /* SPACING (for smallest devices) */
+        --padding-tiny: 0.25rem;
+        --padding-small: 0.5rem;
+        --padding-medium: 1rem;
+        --padding-large: 1.5rem;
+        --padding-xlarge: 2rem;
+        --padding-xxlarge: 3rem;
+        --padding-xxxlarge: 6rem;
+
+        --font-size-tiny: 0.125rem;
+        --font-size-small: 0.25rem;
+        --font-size-base: 1rem;
+        --font-size-medium: 1.25rem;
+        --font-size-large: 1.5rem;
+        --font-size-xlarge: 2rem;
+        --font-size-xxlarge: 3rem;
+        --font-size-xxxlarge: 4rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    :root {
+
+        /* SPACING */
+        --padding-tiny: 0.25rem;
+        --padding-small: 0.5rem;
+        --padding-medium: 1rem;
+        --padding-large: 1.25rem;
+        --padding-xlarge: 1.5rem;
+        --padding-xxlarge: 1.75rem;
+        --padding-xxxlarge: 2rem;
+
+        --margin-small: 0.25rem;
+        --margin-medium: 0.5rem;
+        --margin-large: 0.75rem;
+
+        --border-radius-small: 0.125rem --border-radius-medium: 0.25rem;
+        --border-radius-large: 0.5rem;
+
+        --font-size-tiny: 0.125rem;
+        --font-size-small: 0.25rem;
+        --font-size-base: 1rem;
+        --font-size-medium: 1.25rem;
+        --font-size-large: 1.5rem;
+        --font-size-xlarge: 1.75rem;
+        --font-size-xxlarge: 2rem;
+        --font-size-xxxlarge: 2.0625rem;
     }
 }
 
 /* Extra small devices (200px and down) */
 @media only screen and (max-width: 200px) {
     :root {
-        /* SPACING */
-        --padding-tiny: 2px;
-        --padding-small: 4px;
-        --padding-medium: 8px;
-        --padding-large: 12px;
-        --padding-section: 4px;
-
-        --margin-small: 4px;
-        --margin-medium: 8px;
-        --margin-large: 12px;
-
-        --border-radius-small: 2px;
-        --border-radius-medium: 4px;
-        --border-radius-large: 8px;
-
-        /* FONT SIZING */
-        --font-size-small: 0.75rem;
-        --font-size-base: 0.875rem;
-        --font-size-large: 1rem;
-        --font-size-xlarge: 1.125rem;
-        --font-size-xxlarge: 1.25rem;
-        --font-size-xxxlarge: 1.5rem;
-
-        /* ICON SIZING */
-        --icon-size-small: 8px;
-        --icon-size-medium: 16px;
-        --icon-size-large: 24px;
-        --icon-size-xlarge: 32px;
-    }
-}
-
-
-/* Extra small devices (phones, 320px and down) */
-@media only screen and (min-width: 200px) {
-    :root {
-        /* SPACING */
-        --padding-tiny: 4px;
-        --padding-small: 8px;
-        --padding-medium: 16px;
-        --padding-large: 24px;
-        --padding-section: 8px;
-
-        --margin-small: 8px;
-        --margin-medium: 16px;
-        --margin-large: 24px;
-
-        --border-radius-small: 4px;
-        --border-radius-medium: 8px;
-        --border-radius-large: 12px;
-
-        /* FONT SIZING */
-        --font-size-small: 0.8125rem;
-        --font-size-base: 0.9375rem;
+        --font-size-tiny: 0.25rem;
+        --font-size-small: 0.5rem;
+        --font-size-base: 1rem;
+        --font-size-medium: 1.0625rem;
         --font-size-large: 1.125rem;
-        --font-size-xlarge: 1.375rem;
+        --font-size-xlarge: 1.25rem;
         --font-size-xxlarge: 1.5rem;
         --font-size-xxxlarge: 1.75rem;
-        /* ICON SIZING */
-        --icon-size-small: 12px;
-        --icon-size-medium: 20px;
-        --icon-size-large: 28px;
-        --icon-size-xlarge: 36px;
-    }
-}
 
-
-/* small devices (phones, 320px and up) */
-@media only screen and (min-width: 320px) {
-    :root {
-        /* SPACING */
-        --font-size-base: 14px;
-        --padding-tiny: 4px;
-        --padding-small: 8px;
-        --padding-medium: 16px;
-        --padding-large: 20px;
-        --padding-section: 8px;
-
-        --margin-small: 8px;
-        --margin-medium: 16px;
-        --margin-large: 24px;
-
-        --border-radius-small: 4px;
-        --border-radius-medium: 8px;
-        --border-radius-large: 12px;
-
-        /* FONT SIZING */
-        --font-size-small: 0.875rem;
-        --font-size-base: 1rem;
-        --font-size-large: 1.25rem;
-        --font-size-xlarge: 1.5rem;
-        --font-size-xxlarge: 1.875rem;
-        --font-size-xxxlarge: 2.5rem;
-
-        /* ICON SIZING */
-        --icon-size-small: 16px;
-        --icon-size-medium: 24px;
-        --icon-size-large: 32px;
-        --icon-size-xlarge: 40px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    :root {
-        /* SPACING */
-        --font-size-base: 16px;
-        --padding-tiny: 6px;
-        --padding-small: 12px;
-        --padding-medium: 18px;
-        --padding-large: 24px;
-        --padding-section: 64px;
-
-        --margin-small: 12px;
-        --margin-medium: 18px;
-        --margin-large: 28px;
-
-        --border-radius-small: 6px;
-        --border-radius-medium: 10px;
-        --border-radius-large: 14px;
-
-        /* FONT SIZING */
-        --font-size-small: 1rem;
-        --font-size-base: 1.125rem;
-        --font-size-large: 1.5rem;
-        --font-size-xlarge: 1.875rem;
-        --font-size-xxlarge: 2.5rem;
-        --font-size-xxxlarge: 4rem;
-
-        /* ICON SIZING */
-        --icon-size-small: 20px;
-        --icon-size-medium: 28px;
-        --icon-size-large: 36px;
-        --icon-size-xlarge: 48px;
-    }
-}
-
-/* Large devices (laptops/desktops, 1024px and up) */
-@media only screen and (min-width: 1024px) {
-    :root {
-        /* SPACING */
-        --font-size-base: 18px;
-        --padding-tiny: 8px;
-        --padding-small: 16px;
-        --padding-medium: 24px;
-        --padding-large: 32px;
-        --padding-section: 192px;
-
-        --margin-small: 16px;
-        --margin-medium: 24px;
-        --margin-large: 36px;
-
-        --border-radius-small: 8px;
-        --border-radius-medium: 12px;
-        --border-radius-large: 16px;
-
-        /* FONT SIZING */
-        --font-size-small: 1.125rem;
-        --font-size-base: 1.25rem;
-        --font-size-large: 1.75rem;
-        --font-size-xlarge: 2.125rem;
-        --font-size-xxlarge: 3rem;
-        --font-size-xxxlarge: 5rem;
-
-        /* ICON SIZING */
-        --icon-size-small: 24px;
-        --icon-size-medium: 32px;
-        --icon-size-large: 40px;
-        --icon-size-xlarge: 56px;
     }
 }

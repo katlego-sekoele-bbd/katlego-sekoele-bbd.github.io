@@ -12,6 +12,6 @@
 }
 
 #logo-image {
-    width: var(--icon-size-xlarge);
+    width: var(--icon-size-large);
     vertical-align: middle;
 }
