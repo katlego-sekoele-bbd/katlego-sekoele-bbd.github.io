@@ -23,11 +23,8 @@
 .showcase-card {
     border-radius: var(--border-radius-medium);
     padding: var(--padding-large);
-    overflow: hidden;
     box-shadow: var(--box-shadow-small);
-    top: var(--margin-large);
     margin-top: var(--margin-large);
-    width: 90%;
 }
 
 .showcase-card-button {
