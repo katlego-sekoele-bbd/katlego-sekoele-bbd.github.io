@@ -12,16 +12,11 @@ p {
 
 a {
     text-decoration: none;
-    text-decoration: underline;
 }
 
 a:visited {
     text-decoration: none;
     color: var(--text);
-}
-
-a:hover {
-    color: var(--accent-blue);
 }
 
 section {
